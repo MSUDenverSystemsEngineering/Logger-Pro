@@ -119,7 +119,7 @@ Try {
 
 		## Show Welcome Message, close Internet Explorer if required, allow up to 3 deferrals, verify there is enough disk space to complete the install, and persist the prompt
 		Show-InstallationWelcome -CloseApps 'loggerpro' -CheckDiskSpace -PersistPrompt
-		
+
 
 		## <Perform Pre-Installation tasks here>
 		Show-InstallationPrompt -Title "LoggerPro Install" -Message "If any Vernier LabPro or LabQuest interfaces are connected to your computer with a USB cable, please disconnect the USB cable(s) now. Failing to do so can cause serious problems for all programs using these devices through a USB connection.`n`n(Install will proceed automatically in 30 seconds.)`n`nDo you want to proceed?" -ButtonRightText "Cancel" -ButtonLeftText "Continue" -Timeout 30 -ExitOnTimeout $False -OutVariable out
@@ -251,8 +251,8 @@ Catch {
 # SIG # Begin signature block
 # MIImVgYJKoZIhvcNAQcCoIImRzCCJkMCAQExDzANBglghkgBZQMEAgEFADB5Bgor
 # BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG
-# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCABsbyx3xj7pZkb
-# AJnCt2x+vyh7NuOtI7869kgIoexCtKCCH8EwggVvMIIEV6ADAgECAhBI/JO0YFWU
+# KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCDe+ixxk+/iMt9E
+# /nHqb3/60nEbZhiV8PznvISIAkKetaCCH8EwggVvMIIEV6ADAgECAhBI/JO0YFWU
 # jTanyYqJ1pQWMA0GCSqGSIb3DQEBDAUAMHsxCzAJBgNVBAYTAkdCMRswGQYDVQQI
 # DBJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcMB1NhbGZvcmQxGjAYBgNVBAoM
 # EUNvbW9kbyBDQSBMaW1pdGVkMSEwHwYDVQQDDBhBQUEgQ2VydGlmaWNhdGUgU2Vy
@@ -426,32 +426,32 @@ Catch {
 # ZDErMCkGA1UEAxMiU2VjdGlnbyBQdWJsaWMgQ29kZSBTaWduaW5nIENBIFIzNgIR
 # AKVN33D73PFMVIK48rFyyjEwDQYJYIZIAWUDBAIBBQCggYQwGAYKKwYBBAGCNwIB
 # DDEKMAigAoAAoQKAADAZBgkqhkiG9w0BCQMxDAYKKwYBBAGCNwIBBDAcBgorBgEE
-# AYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQgx6gIJ7wSTCpH
-# Aigj5j+a76TrQ2rvkM6hwT8kpOLVDEAwDQYJKoZIhvcNAQEBBQAEggGAA+tZ0udj
-# FSwKZ9uPTLUPY3OmhdAKVZUfzFNbg0PK8LTtXGrS0ZfaJgXxDjcZgHwLs5svAUzJ
-# v28QVF6znxJGYECFUuC/e9qpyx1APZMfWSQJ3reP7sk8TNi43qor602fbkr3FzfU
-# azGl3xRPOsaYUMh9Vx21pvegv38B4XbwMPYY3vL+81nbuROfMqZ1XFZS2N6YosUi
-# 0s9U5lkib+7bgJQQ8GaQ4xq6DkKWari2mk0hk5FPkcfOuasCmpHFaohjJyzs7yf+
-# Tn13mx9gmRqNSvkn2qca8I0oHZ+IgaqF+W90FIcJKlPvRH/JIzihnnbNs9/wqAt2
-# 4mIf2goGfN39g4T3rUucMpixOHsubKkzH2J8NZxtpdallwBVyQYCRRCKit1TJffJ
-# DHxdzpmOcBYEe0sGC7yQmN2CU09Cn9lnYV+lH6VMdv+mLtdMEUT59jNlSS7BtRq5
-# SjyrbuO7Hyk6yZTOTrCWWL+sgPZ3FQnmn9wInPJAA614r1go9e06ad4GoYIDTDCC
+# AYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQg/ZqrDjoUmIql
+# tgVbsiiZQjmviJOi75p2IkBoAShZaukwDQYJKoZIhvcNAQEBBQAEggGAToUtjLZ2
+# q3XKRdnp61JeWo2t26YqCcfdrXOVQ/cahs2bl9gAZhb8OiBBU8YiBnCQwKUeEmDF
+# UrvH8lrBD9qDaM4nkRUEwP00VFPNr9qgbB4AtyEVitM8Irer83qawFb5NZLUFA1r
+# rZFfZMYZmi5X/TcRMrJZxruUElWonad4723DLMkTANf54JZWodP4xGsf1JUZ60ka
+# 915bowxPdgN/QNsRabVt2LpvgoYqYZb0SSfpaJejXc0IgY4h0CMiGGQJk5vHHoor
+# HW/poyfqbThf++FmzbZSCIbwMgZJs1NeMjyRyseCbh6b3k4gLtiISB2BYJMisu2Q
+# 7CA55LrpulTNIP2T8IilPkUmWBSndYrFaIoatTAeLXPs3vvq2hFjESxv5vgifRuq
+# wwxzabREvr7WJzkQ+HKe2gHmkeKcwxLPpBVaZ51joA7q5q5bsWfZaPjAIQyiWH0a
+# iSl8niTUnxTW4EruXIOU7QVsiju4ax4IXxhkUcf2Xj+b56uJzf7SF0HioYIDTDCC
 # A0gGCSqGSIb3DQEJBjGCAzkwggM1AgEBMIGSMH0xCzAJBgNVBAYTAkdCMRswGQYD
 # VQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGDAWBgNV
 # BAoTD1NlY3RpZ28gTGltaXRlZDElMCMGA1UEAxMcU2VjdGlnbyBSU0EgVGltZSBT
 # dGFtcGluZyBDQQIRAJA5f5rSSjoT8r2RXwg4qUMwDQYJYIZIAWUDBAICBQCgeTAY
 # BgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMjA4MTYx
-# ODA4MTFaMD8GCSqGSIb3DQEJBDEyBDA+0JUCDBd6HM8YqV+DVQvWalYSxPhzIr95
-# BK5vJELF+vNNnPbWW1rU4SSJbfrdWu0wDQYJKoZIhvcNAQEBBQAEggIAUqv7CDn0
-# HqZAOKxqstQZHb+nUBbeDKMBbuTtKoGV6tv7WxTRZY9WSydnzda7lfgBmw8ZMHxz
-# wENqCvve5pgEvvj/vi6QF7/7YuN+IH4qwP1A4Fs3xWBw4OId3ktOdH87BiwnPMat
-# rxnR6PMTVNahfZwb+UMhb9W8SauTjtqgMy4GVDf352hUOBJ/MXd/OqHX02E1Jt7/
-# d26KL8iDka1qK0ifO2/9DDVDNWiLokBozMxwAeLSaPh2V5lOZr4E5wwiCpgahJ/K
-# Wr4cCLF0pgcwfhiYWavNyGsEutZenVOGdYJEv6vyXgb4z5/X5rTVjhhVolY0M56e
-# 9vmcLmmsuQBGh9sXJbr0iWUAcVGk0Yk2VkUdrIuk+EONcjZZjAxty/GYCrVr9u7w
-# eN9hyehCG6F6wGErBJBhNb0Xq67oxs0aN+3fDx7GGG5vJY2r9ibh6R7zodPf2I+N
-# AwGxqiRaionpz1qTnzHphh6DQpJEhHf8RD41CzdO+mhHwIkYguKF6eZJmWn15tj0
-# MIZP6lhOH7eEF+gNsSVCa91tl5cDUke5wxDvOAGf/Xewl+qruST9hq+p9JltpdTN
-# 9iY34zcOuogvfIvRvzXPdg+U8L0CaxuN0/18OoSHKAApnZZSl8Ccp01o1NrWDuRp
-# qtsrGJHa4hNvsfr9MBu8HVoGxYHeYqHobD4=
+# OTA1NTdaMD8GCSqGSIb3DQEJBDEyBDDgGWq0AySCfovESfqY/WsxFQPegUqeUf67
+# cLNZLKhSqlVqb2vrHiVtlOuoasSBUdAwDQYJKoZIhvcNAQEBBQAEggIATWumgwFC
+# ObL3PHMTMp/KIUlCypWJF7p1dDEhPe0+RH49TVasdIBaFXkSpwqgrPEncMOoApaO
+# yaGdn2PmRBFT1JuzMA1lHZt17kGRauhePNpk9o4lVPcKEQMwkXrRKpWgcnLjLKo5
+# xVDu2m+kzEHtKuP+841j6+sNzCqIkANUnWsScFW9VQ0dpf9qOmWI/rUj4ZorfsJM
+# LeReKa+qQp+LE1lcC02N4iRrZLh/wLVqYDDtlRxC8W+DdAtLbBcUPJQS4LzgrLFh
+# iqqYj6oYnFa2/EhrXi3OV9xykyT+BXSlui8jExj1X/CZhtgt20+WOujwetPgywyt
+# GZWM+LF/c1HvDYrmCdRWh0XA4EKze7aP0nxPYFvsk4mTRBnt+FYP1POR20kqWcqG
+# 1s9pwCpEKQ1qrdIKXbNWM3jhDL/XAtlTjiXvRwJ98/EG6iuoFe3qGksySOAHzXdY
+# efp9o/apne4mtR+LF3dxbSrpNkwWNPsJdjX1QxqsM1VLvypyBocKjK3rb/b41tIy
+# c6cVWN+RLEnfd65w0hnB5ztH1kKrCvuAiDsKv8H/OKXBrSrrCqYVFioSngs/aRcI
+# Tr6j4NFBh/r8hj3EmBHm2KNeWcv035JrGN+RKzucCl2uIYeNrrkbxpAKWFh0DxwO
+# leoJm1FcYE/IWSxpjbT4gyZIt1j2YNki9cU=
 # SIG # End signature block
